@@ -9,7 +9,7 @@
     --black: #000000;
     --cyan: #008B8B;
     --light-gray: #D3D3D3;
-    --maxwidth: 600px;
+    --maxwidth: 800px;
     --rootsize: 20px;
 }
 
@@ -26,6 +26,7 @@ header {
     overflow: hidden;
     margin: 0 auto;
     padding: 2rem;
+    margin-top: 5rem;
 }
 
 nav{
