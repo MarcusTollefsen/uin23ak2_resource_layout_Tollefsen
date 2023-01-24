@@ -1,4 +1,4 @@
-const resources = [
+/* const resources = [
     {
         category: "HTML",
         text: "HTML står for HyperText Markup Language, og er et strukturspråk som brukes for å lage strukturer til nettside- og applikasjonsgrensesnitt.",
@@ -93,4 +93,30 @@ const resources = [
             },
         ]
     },
-]
+] 
+
+*/
+
+
+
+
+function openTab(evt, kategori) {
+    // Declare all variables
+    var i, tab, knapp;
+  
+    // Get all elements with class="tabcontent" and hide them
+    tab = document.getElementsByClassName("tab");
+    for (i = 0; i < tab.length; i++) {
+      tab[i].style.display = "none";
+    }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
+    knapp = document.getElementsByClassName("knapp");
+    for (i = 0; i < knapp.length; i++) {
+      knapp[i].className = knapp[i].className.replace(" active", "");
+    }
+  
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(kategori).style.display = "block";
+    evt.currentTarget.className += " active";
+  }

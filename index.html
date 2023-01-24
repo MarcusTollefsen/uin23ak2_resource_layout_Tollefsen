@@ -7,32 +7,29 @@
     <link href="style.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
-    <main>
-        <div class="container">
-            <header><h1>Ressursarkiv</h1></header>
-            <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-                <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-              </div>
-              
+<body> 
+        <header><h1>Ressursarkiv</h1></header>
+            <nav>
+                <button class="knapp" onclick="openTab(event, 'en')">Kategori 1</button>
+                <button class="knapp" onclick="openTab(event, 'to')">Kategori 2</button>
+                <button class="knapp" onclick="openTab(event, 'tre')">Kategori 3</button>
+            </nav>
               <!-- Tab content -->
-              <div id="London" class="tabcontent">
+              <div id="en" class="tab">
                 <h3>London</h3>
                 <p>London is the capital city of England.</p>
               </div>
               
-              <div id="Paris" class="tabcontent">
+              <div id="to" class="tab">
                 <h3>Paris</h3>
                 <p>Paris is the capital of France.</p>
               </div>
               
-              <div id="Tokyo" class="tabcontent">
+              <div id="tre" class="tab">
                 <h3>Tokyo</h3>
                 <p>Tokyo is the capital of Japan.</p>
               </div>
-    </main>
 
+    <script src="ressurser.js"></script>
 </body>
 </html>

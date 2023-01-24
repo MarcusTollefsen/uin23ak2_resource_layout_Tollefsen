@@ -7,31 +7,65 @@
     --green: #00AF4D;
     --white: #FFFFFF;
     --black: #000000;
-    --maxwidth: 1200px;
+    --cyan: #008B8B;
+    --light-gray: #D3D3D3;
+    --maxwidth: 600px;
     --rootsize: 20px;
 }
 
-main{
-    display: flex;
-    justify-content: center;
-
-}
-
-div.tab {
+body{
     width: 100%;
     max-width: var(--maxwidth);
     margin: 0 auto;
-    background-color: var(--white);
-    overflow: hidden;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
+    width: 100%;
+    max-width: var(--maxwidth);
+    border: 1px solid var(--black);
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
-nav li{
-    display: inline-block;
-    text-decoration: none;
+nav{
+    width: 100%;
+    max-width: var(--maxwidth);
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 1.5rem;
+    
 }
+
+nav button{
+    background-color: var(--light-gray);
+    border: none;
+    color: var(--black);
+    cursor: pointer;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+nav button.active{
+    background-color: var(--cyan);
+    color: var(--white);
+}
+
+.tab{
+    display: none;
+    padding: 6px 12px;
+    border-top: 10px solid var(--cyan);
+    border-left: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    border-right: 1px solid var(--black);
+    width: 100%;
+    max-width: var(--maxwidth);
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+
